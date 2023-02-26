@@ -3,8 +3,9 @@ plugins {
     application
 }
 
+val revision: String by project
 group = "dev.troublemaker.example"
-version = "1.0-SNAPSHOT"
+version = "1.0${revision}"
 
 repositories {
     mavenCentral()
